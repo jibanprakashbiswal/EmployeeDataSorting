@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 
 
 public class Employee extends Thread {
@@ -15,7 +16,11 @@ public class Employee extends Thread {
       //  System.out.println(emp);
     Collections.sort(emp);
         System.out.println(emp);
-Iterator it=emp.iterator();
+        Iterator it=emp.iterator();
+        while(it.hasNext())
+        {
+            System.out.println(it.next());
+        }
     }
     public static void main(String[] args) {
 
