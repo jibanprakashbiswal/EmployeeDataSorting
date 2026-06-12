@@ -15,12 +15,12 @@ public class Employee extends Thread {
       //  System.out.println(emp);
     Collections.sort(emp);
         System.out.println(emp);
-
+Iterator it=emp.iterator();
     }
     public static void main(String[] args) {
 
         Thread t1=new Thread(new Employee());
         t1.start();
-        System.out.println("Project end");       
+              
     }
 }
