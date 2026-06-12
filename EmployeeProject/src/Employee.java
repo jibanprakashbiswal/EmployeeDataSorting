@@ -21,5 +21,6 @@ public class Employee extends Thread {
 
         Thread t1=new Thread(new Employee());
         t1.start();
+        System.out.println("Project end");       
     }
 }
